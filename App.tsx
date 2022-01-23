@@ -1,25 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { LogBox } from 'react-native';
+import { RootNavigator } from './navigations/RootNavigator';
 import { Provider } from 'react-redux';
 import { store } from './store';
+
+//React native SDKのバージョンによってワーニングが出る（そのワーニングを無視する）
+LogBox.ignoreLogs([
+  'Setting a timer',
+  'AsyncStorage has been extracted from react-native core and will be remove in a future release',
+]);
 
 export default function App() {
   return (
     //storeを明示
     <Provider store={store}>
-      <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <RootNavigator />
     </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
