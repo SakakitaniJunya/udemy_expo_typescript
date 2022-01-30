@@ -13,7 +13,7 @@ export const RootNavigator: VFC = () => {
   //ロード中の時
   if (isLoading) {
     return (
-      <SafeAreaView style={tw('flex-1 items-conter justify-center')}>
+      <SafeAreaView style={tw('flex-1 items-center justify-center')}>
         <ActivityIndicator size="large" color="gray" />
       </SafeAreaView>
     );

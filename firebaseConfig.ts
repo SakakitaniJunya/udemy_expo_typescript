@@ -9,7 +9,7 @@ const firebaseConfig = {
   authDomain: Constants?.manifest?.extra?.authDomain,
   projectId: Constants?.manifest?.extra?.projectId,
   storageBucket: Constants?.manifest?.extra?.storageBucket,
-  messagingSenderI: Constants?.manifest?.extra?.messagingSenderI,
+  messagingSenderId: Constants?.manifest?.extra?.messagingSenderId,
   appId: Constants?.manifest?.extra?.appId,
 };
 

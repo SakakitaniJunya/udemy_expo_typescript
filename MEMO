@@ -1,0 +1,17 @@
+
+
+
+
+
+
+コマンド一覧
+
+#async-storageのエラー
+npm i @react-native-community/async-storage
+
+警告を抑制します。
+以下を使用して、 YellowBoxの警告を抑制することができます
+
+import {YellowBox} from 'react-native';
+
+
